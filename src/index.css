@@ -12,5 +12,44 @@
 .cardContent{
   background-color: black;
   height: 100px;
-  color: white;
+  color: white;  
 }
+
+.linkContent{
+  height: 120px;
+  color: white;
+  justify-content: space-between;  
+}
+
+.linkContent img{
+  width: 40px;
+  margin-right: 15px;
+}
+
+
+footer{
+  background-image: url('../public/img/footer-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navStyle{
+  color: white;  
+}
+
+.navStyle ul span{  
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.navStyle ul li{
+  list-style: none;   
+}
+
+.navStyle ul li a{
+  text-decoration: none;
+  color:gray;
+  font-size: small;
+}
+
+
