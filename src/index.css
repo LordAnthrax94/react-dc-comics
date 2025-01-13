@@ -1,1 +1,16 @@
+.navList{
+  font-size: large;
+  font-weight: bold;  
+}
 
+.navList ul li{
+  margin-left: 10;
+  margin-right: 10;
+}
+
+
+.cardContent{
+  background-color: black;
+  height: 100px;
+  color: white;
+}
