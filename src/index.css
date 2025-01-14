@@ -8,6 +8,10 @@
   margin-right: 10;
 }
 
+.navList ul li a:hover{
+  color: blue;  
+}
+
 
 .cardContent{
   background-color: black;
