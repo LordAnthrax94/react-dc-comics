@@ -1,3 +1,13 @@
+header{
+  background-image: url(../public/img/jumbotron.jpg);
+  height: 600px;
+}
+
+.whiteBar{
+  background-color: white;
+  height: 120px;
+}
+
 .navList{
   font-size: large;
   font-weight: bold;  
@@ -6,6 +16,12 @@
 .navList ul li{
   margin-left: 10;
   margin-right: 10;
+  list-style: none;  
+}
+
+.navList ul li a{
+  color: black;
+  text-decoration: none;
 }
 
 .navList ul li a:hover{

@@ -1,57 +1,28 @@
-const Header = () =>{
+const Header = (props) =>{
+  const menuHeader = props.navMenu; 
+  
   return (
     <header>
-        <div className = "navInt container d-flex justify-content-between">
-          <div>
-          <nav className="navbar">
-              <div className="container">
-                <a className="navbar-brand" href="#">
-                  <img src="../../public/img/dc-logo.png" alt="LogoDc"/>
-                </a>
-              </div>
-            </nav>
-          </div>
-            <div className="navList d-flex">
-            <nav className="navbar navbar-expand-lg">
-            <div className="container-fluid">
-              <a className="navbar-brand" href="#"></a>
-              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-              </button>
-              <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav">
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Home</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Features</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Pricing</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Disabled</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Disabled</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Disabled</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Disabled</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Disabled</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Disabled</a>
-                  </li>
-                </ul>
-              </div>
+      <div className="whiteBar">
+        <div className = "navInt container d-flex justify-content-between">          
+            <div>
+            <nav className="navbar">
+                <div className="container">
+                  <a className="navbar-brand" href="#">
+                    <img src="../../public/img/dc-logo.png" alt="LogoDc"/>
+                  </a>
+                </div>
+              </nav>
             </div>
-          </nav>
+             <div className="navList">
+                <ul className="d-flex align-content-center">
+                  { menuHeader.map((link) => (
+                    <li key={link.id}><a href={link.url}>{link.name}</a></li>
+                  ))}
+                </ul>                
+             </div>
           </div>
+          
         </div>      
     </header>
   )
