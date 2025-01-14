@@ -15,7 +15,7 @@ const Header = (props) =>{
               </nav>
             </div>
              <div className="navList">
-                <ul className="d-flex align-content-center">
+                <ul className="d-flex justify-content-between">
                   { menuHeader.map((link) => (
                     <li key={link.id}><a href={link.url}>{link.name}</a></li>
                   ))}

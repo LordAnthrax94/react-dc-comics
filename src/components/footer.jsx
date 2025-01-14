@@ -50,11 +50,18 @@ const Footer = (props) =>{
 
      </div>
       <div className="bg-dark">
-        <div className="container">
-        
+        <div className="container d-flex flex-nowrap justify-content-between flex-w">
+          <button type="button" className="btn btn-outline-primary">Primary</button>
+        </div>
+        <div>
+          <span>FOLLOW US</span>
+          <a href="#"><img src="../Public/img/footer-facebook.png" alt="facebook" /></a> 
+          <a href="#"><img src="../Public/img/footer-twitter.png" alt="twitter" /></a>
+          <a href="#"><img src="../Public/img/footer-youtube.png" alt="youtube" /></a>
+          <a href="#"><img src="../Public/img/footer-pinterest.png" alt="pinterest" /></a>
+          <a href="#"><img src="../Public/img/footer-periscope.png" alt="periscope" /></a>
         </div>
       </div>
-        
 
     </footer>
   )

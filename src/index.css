@@ -13,9 +13,7 @@ header{
   font-weight: bold;  
 }
 
-.navList ul li{
-  margin-left: 10;
-  margin-right: 10;
+.navList ul li{  
   list-style: none;  
 }
 
@@ -27,6 +25,7 @@ header{
 .navList ul li a:hover{
   color: blue;  
 }
+
 
 
 .cardContent{
