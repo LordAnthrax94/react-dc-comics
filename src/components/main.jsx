@@ -1,17 +1,19 @@
 const Main = (props) =>{
-  const comicsList = props.comics
+  const comicsList = props.comicsAccess
+  console.log(comicsList);
+  
   return (
     <main>
       <div className="cardContent">
         <div className="container d-flex">
-        {/* { comicsList.map((comic) => (
-        <div class="card" style="width: 18rem;">
+        { comicsList.map(comic => (
+         <div key={comic.id} class="card">
           <img src={ comic.thumb } class="card-img-top" alt="Comic Thumb" />
-          <div class="card-body">
+           <div class="card-body">
             <p class="card-text">{comic.title}</p>
-          </div>
-        </div>
-        ))}  */}
+           </div>
+         </div>
+        ))}  
         </div>
         
       </div>
