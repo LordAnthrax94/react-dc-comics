@@ -4,14 +4,14 @@ const Main = (props) =>{
     <main>
       <div className="cardContent">
         <div className="container d-flex">
-        { comicsList.map((comic) => (
+        {/* { comicsList.map((comic) => (
         <div class="card" style="width: 18rem;">
           <img src={ comic.thumb } class="card-img-top" alt="Comic Thumb" />
           <div class="card-body">
             <p class="card-text">{comic.title}</p>
           </div>
         </div>
-        ))} 
+        ))}  */}
         </div>
         
       </div>
