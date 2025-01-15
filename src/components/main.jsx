@@ -1,3 +1,5 @@
+import comics from "../data/comics"
+
 const Main = () =>{
   return (
     <main>
@@ -7,27 +9,28 @@ const Main = () =>{
         </div>
         
       </div>
-      <div className ="linkContent bg-primary">
-        <div className="listNav container d-flex align-content-center justify-content-between">
-          <div className="d-flex align-items-center">
-            <img src="../Public/img/buy-comics-digital-comics.png" alt="buyLogo" />
-            <a className="nav-link" href="#">DIGITAL COMICS</a>
+      <div className ="linkContent bg-primary d-flex">
+        <div className="listNav container d-flex justify-content-between align-items-center align-content-center">
+
+          <div className="d-flex align-items-center">            
+            <a className="nav-link" href="#"><img src="../Public/img/buy-comics-digital-comics.png" alt="buyLogo" /><span>DIGITAL COMICS</span></a>
           </div> 
+
           <div className="d-flex align-items-center">
-            <img src="../Public/img/buy-comics-merchandise.png" alt="buyLogo" />
-            <a className="nav-link" href="#">DC MERCHANDISE</a>
+            
+            <a className="nav-link" href="#"><img src="../Public/img/buy-comics-merchandise.png" alt="buyLogo" /><span>DC MERCHANDISE</span></a>
           </div>
           <div className="d-flex align-items-center">
-            <img src="../Public/img/buy-comics-subscriptions.png" alt="buyLogo" />
-            <a className="nav-link" href="#">SUBSCRIPTION</a>
+            
+            <a className="nav-link" href="#"><img src="../Public/img/buy-comics-subscriptions.png" alt="buyLogo" /><span>SUBSCRIPTION</span></a>
           </div>
           <div className="d-flex align-items-center">
-            <img src="../Public/img/buy-comics-shop-locator.png" alt="buyLogo" />
-            <a className="nav-link" href="#">COMIC SHOP LOCATOR</a>
+            
+            <a className="nav-link" href="#"><img src="../Public/img/buy-comics-shop-locator.png" alt="buyLogo" /><span>COMIC SHOP LOCATOR</span></a>
           </div>
           <div className="d-flex align-items-center">
-            <img src="../Public/img/buy-dc-power-visa.svg" alt="buyLogo" />
-            <a className="nav-link" href="#">DC POWER VISA</a>
+            
+            <a className="nav-link" href="#"><img src="../Public/img/buy-dc-power-visa.svg" alt="buyLogo" /><span>DC POWER VISA</span></a>
           </div>          
            
            
