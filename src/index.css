@@ -54,6 +54,8 @@ footer{
   background-image: url('../public/img/footer-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  overflow: hidden;  
 }
 
 .navStyle{
@@ -76,7 +78,13 @@ footer{
 }
 
 .bg-dark{
+  position: relative;
   height: 100px;
+  z-index:2  
+}
+
+.footerTop{
+  overflow: hidden;
 }
 
 .linkList{
@@ -94,11 +102,17 @@ footer{
   }
 }
 
+.logoFooter{
+  position: absolute;
+  right: 300px;
+  top: -50px;  
+}
+
 .btn{
   border: 2px solid rgb(2, 130, 249);
-  color: white;
-  text-decoration: none;
+  color: white;  
   border-radius: 0;
+  
 }
 
 

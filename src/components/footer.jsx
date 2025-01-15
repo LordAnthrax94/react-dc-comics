@@ -7,7 +7,7 @@ const Footer = (props) =>{
 
   return (
     <footer>
-     <div className="container d-flex justify-content-between">
+     <div className="footerTop container d-flex justify-content-between">
 
       <div className="listeFinali d-flex mt-5">
           
