@@ -5,18 +5,25 @@ const Main = (props) =>{
   return (
     <main>
       <div className="cardContent">
-        <div className="container d-flex">
-        { comicsList.map(comic => (
-         <div key={comic.id} class="card">
-          <img src={ comic.thumb } class="card-img-top" alt="Comic Thumb" />
-           <div class="card-body">
-            <p class="card-text">{comic.title}</p>
-           </div>
-         </div>
-        ))}  
+        <div className="cardPos container">
+          <h3 className="appendice">CURRENT SERIES</h3>
+          <div className="col-12 d-flex justify-content-between flex-wrap">
+          { comicsList.map(comic => (
+            <div key={comic.id} className="card">
+              <div className="cardImg">
+                <img src={ comic.thumb } alt="Comic Thumb" />
+              </div>              
+              <div className="cardBody">
+                <p className="cardText">{comic.series}</p>
+              </div>
+            </div>
+            ))}
+          </div>
+          <button type="button" className="LoadButton">LOAD MORE</button>
         </div>
         
       </div>
+      
       <div className ="linkContent bg-primary d-flex">
         <div className="listNav container d-flex justify-content-between align-items-center align-content-center">
 
